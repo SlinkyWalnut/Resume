@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.0in}
+\spacing{0.65}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Omobolaji Alabi} \\ \vspace{1pt}
+    \small 681-238-8329 $|$ \href{mailto:ooa310@nyu.edu}{\underline{ooa310@nyu.edu}} $|$ 
+    \href{https://www.linkedin.com/in/omobolaji-alabi}{\underline{www.linkedin.com/in/omobolaji-alabi}}
+     $|$ \href{https://github.com/SlinkyWalnut}{\underline{github.com/SlinkyWalnut}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {\textbf{New York University} $|$ New York, NY} {Expected graduation date: May 2026 \vspace{2pt}}
+      {Bachelor of Science in Computer Engineering, Minor in Mathematics} {GPA: 3.7}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+        {Google}{May 2025 -- Present}
+        {Software Engineering Intern} {Seattle, Washington}
+        \resumeItemListStart
+            \resumeItem{}{Worked on Cloud Service Mesh Team}
+            \resumeItem{}{Designed and created batch job that would alert team if a mesh configuration was no longer eligible for migration}
+            \resumeItem{}{Added automatic migration blocking for ineligible configurations}
+        \resumeItemListEnd
+  \resumeSubheading
+      {Google}{May 2024 -- Aug. 2024}
+      {Student Training in Engineering Program Intern (STEP)}{Sunnyvale, California}
+      \resumeItemListStart
+        \resumeItem{Worked on Gmail Backend Security team}
+        \resumeItem{Designed and created a back end tool that automates the rotation of certain Gmail security keys using Java}
+        \resumeItem{Used internal apis, rpcs, and created borg jobs to create code changes automatically in Gmail's codebase}
+        \resumeItem{Created mock server to test methods instead of connecting to Google's live version control server}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{May 2023 -- Aug. 2023}
+    {Software Development Engineer Intern}{Bellevue, Washington}
+      \resumeItemListStart
+        \resumeItem{Worked on the Supply Chain Optimization Technology, Inventory Planning and Control, Simulation Team}
+        \resumeItem{Full-stack development of internal tool used by data scientists to test the accuracy of supply chain simulation runs and visualize data}
+        \resumeItem{Added more than 150 inventory metrics to tool from simulation runs that would be tested across simulations to find inconsistencies}
+      \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+        {Fordham University}{Jan. 2024 -- May 2024}
+        {Teaching Assistant}{New York, New York}
+        \resumeItemListStart
+            \resumeItem{Teaching Assistant for Computer Science II, a second-level programming course with concentration on object-oriented programming techniques }
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects and Leadership}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Bloomberg Tech Insights Summer School} {June 2025 - Aug. 2025}
+    {Selectee}{}
+    \resumeSubheading
+      {Robotic Design Team, New York University} {Fall 2024 -- Current}
+      {Software Engineer} {New York, New York}
+      \resumeItemListStart
+        \resumeItem{Worked on Robot Operating System(ROS) Gazebo simulations so that we could test our robot's software before it was physically built}
+        \resumeItem{Led community outreach efforts with robotics team by organizing and teaching interactive STEM workshops for elementary school students, promoting early engagement in robotics and technology}
+    \resumeItemListEnd
+       \resumeSubheading
+      {Headstart Fellowship} {Aug. 2024 -- Current}
+      {Mentor} {}
+      \resumeItemListStart
+        \resumeItem{Provide one-on-one mentorship for a highly selective fellowship program which focuses on professional development for underclassmen in the areas of Finance, Consulting and Technology}
+        \resumeItem{Work closely with my mentees, furthering their professional development through comprehensive coaching and the completion of tangible deliverables}
+    \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{LockIn} $|$ \href{https://github.com/blackbirde71/alleyesonme}{\emph{https://github.com/blackbirde71/alleyesonme}}}{June 2024}
+          \resumeItemListStart
+            \resumeItem{Used hume api to identify user emotions and then determined whether users were paying attention}
+            \resumeItem{Transcribed lecture when users weren't paying attention then used this data to tell students what they missed}
+            \resumeItem{Created data visualization that showed user how often they were paying attention to a lecture}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Farm Flex AI} $|$ \href{}{}{\emph{https://github.com/isayahc/Crop-AI}}}{May 2024}
+      %     \resumeItemListStart
+      %       \resumeItem{Reboot the Earth UN Hackathon}
+      %       \resumeItem{Trained AI on crop yield data to determine the best crops for farmers to grow given their specific soil qualities and climate}
+      %     \resumeItemListEnd
+        \resumeProjectHeading
+      {\textbf {FoodHub} $|$ \href{}{}{\emph{https://github.com/WillPelech/AxolotlDatabaseProject}}}{Feb. 2025 -- April 2025}
+      \resumeItemListStart
+        \resumeItem{Worked with a team of 3 other student in my databases class to create a web-app for food reviewing}
+        \resumeItem{Used Google Maps api to dynamically show all of the restaurants a user has visited and reviewed on a map by querying our database}
+        \resumeItem{Implemented several different layers of database security such as user views, authentication tokens, and password hashing}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+%--------AWARDS AND HONORS----------
+%    \resumeSubHeadingListStart
+%        \resumeItem
+%        {\$40,000 Amazon Future Engineer Scholarship $|$} {Bellevue, WA}\vspace{-2pt}
+%        \resumeItem
+%        {\$40,000 The Helping Project Scholarship $|$}{Clearwater, FL}\vspace{-2pt}
+ %       \resumeItem
+  %      {\$4,300 Society of Automative Engineers Scholarship $|$}{Warrendale, PA}\vspace{-2pt}
+   %     \resumeItem{Fordham University Dean's List 2023 $|$}{New York, NY}\vspace{-2pt}
+   % \resumeSubHeadingListEnd
+    
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills and Hobbies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages and Frameworks}{: x86 Assembly C++, Java, JavaScript, Typescript, HTML/CSS, Python, PHP, Scheme, Prolog, Golang, Lean React, Flask, Verilog, ROS, Linux, OpenAI API, ,Google Maps API, Latex}\vspace{5pt} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, Amazon Web Services, MongoDb, Kubernetes, Service Mesh\vspace{5pt}} \\
+     \textbf{Hobbies}{: Basketball,  Chess, Volleyball, Baking Cheesecake, Weight Lifting, Poker, Pickleball, Jiu-Jitsu, Bouldering}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
